@@ -43,12 +43,10 @@ lines(dataFeb$Time, dataFeb$Sub_metering_3, type="l"
      ,main=""
      ,col="blue") 
 
-legend(as.POSIXct("2007-02-02 12:00:00"), 40
+legend("topright"
        ,legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
        ,col=c("black","red","blue")
-       ,cex=0.45
        )
-
 
 dev.copy(png,'Rplot3.png') ## Returns plot in working directory as a png file.
 dev.off()
